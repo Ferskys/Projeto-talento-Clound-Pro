@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --blue: #4a90e2;
+    --lightblue: #e2f4ff;
+    --darkgrey: #252d44;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "karla";
+}
+
+.main {
+    height: 100svh;
+    width: 100vw;  
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.navbar {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.navbar_img_logo {
+    max-width: 8rem;
+}
+
+.navbar_menu {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar_menu_item {
+    text-decoration: none;
+    color: var(--darkgrey);
+    transition: .2s;
+}
+
+.navbar_menu_item.active {
+    color: var(--blue);
+}
+
+.navbar_button {
+    padding: 8px 12px;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    border-radius: 15px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.hero_left {
+    max-width: 45%;
+}
+
+.hero_left_title {
+    max-width: 85%;
+    font-weight: 800;
+    font-size: 4rem;
+    letter-spacing: -3px;
+    color: var(--darkgrey);
+}
+
+.hero_left_description {
+    max-width: 78%;
+    margin-top: 20px;
+}
+
+.hero_left_description_gratuita {
+    font-weight: 700;
+}
+
+.hero_left_link {
+    display: inline-block; 
+    padding: 8px 12px;
+    margin-top: 20px;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+.hero_right {
+    max-width: 45%;
+}
+
+.hero_right_container {
+    height: 30rem;
+    width: 30rem;
+    overflow: hidden;
+    border-radius: 10%;
+
+}
+
+.hero_right_img {
+    max-width: 100%;
+    height: 100%;
+    /* Para a imagem não distorcer */
+    object-fit: cover;
+}
