@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>NetAcademy | Contato</title>
+</head>
+<body>
+    <main class="main">
+        <div class="background">
+            <nav class="navbar">
+                <div class="navbar_img">
+                    <a href="../../index.html"><img src="../../assets/logos/netacademy-navbar.png" alt="company-logo" class="navbar_img_logo">
+                    </a>
+                </div>
+                <ul class="navbar_menu">
+                    <li><a href="../../index.html" class="navbar_menu_item active">Início</a></li>
+                    <li><a href="" class="navbar_menu_item">Aprendizado</a></li>
+                    <li><a href="" class="navbar_menu_item">Nossa Missão</a></li>
+                    <li><a href="" class="navbar_menu_item">Contato</a></li>
+                </ul>
+                <!-- Usar botão para inscrição na newsletter -->
+                <button class="navbar_button">
+                    Inscrever-se
+                </button>
+            </nav>
+            <section class="contato">
+                <div class="contato_text">
+                    <h1 class="contato_title">Fale com nossa equipe</h1>
+                    <p class="contato_description">Compartilhe suas ideias e ajude a moldar os próximos tópicos e cursos, contribuindo para o crescimento do nosso portal de aprendizado.</p>
+                </div>
+                <form action="" class="form">
+                    <div class="form_info">
+                        <div class="form_container">
+                            <label for="inputFirstName" class="form_label">Nome</label>
+                            <input id="inputFirstName" name="firstName" class="form_input border_change" type="text" pattern="[A-Za-z09]{3,20}" placeholder="Digite seu nome..." required>
+                        </div>
+                        <div class="form_container">
+                            <label for="inputEmail" class="form_label">Email</label>
+                            <input id="inputEmail" type="email" class="form_input border_change" placeholder="exemplo@email.com" required>
+                        </div>
+                        <div class="form_container">
+                            <label for="inputPhone" class="form_label">Fone</label>
+                            <input id="inputPhone" type="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" class="form_input border_change" placeholder="85-99158-8774"  required>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <label for="messageBox" class="form_label">Message</label>
+                        <textarea name="messageBox" id="messageBox" class="messageBox border_change" placeholder="Describe your issue here..." maxlength="450" required></textarea>
+                        <div id="charCount" class="charCount">450 characters remaining</div>
+                    </div>
+                </form>                
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_background">
+            <div class="footer_container">
+                <h3 class="footer_title">Equipe</h3>
+                <a href="https://github.com/Ferskys" class="footer_text">Fernanda Suominsky</a>
+                <a href="https://github.com/HenriqueCanho" class="footer_text">Henrique Canho</a>
+                <a href="https://github.com/jullyanvpr" class="footer_text">Jullyan Gomes</a>
+                <a href="https://github.com/LeslyMontufar" class="footer_text">Lesly Montúfar</a>
+                <a href="" class="footer_text">Victor Oliveira</a>
+            </div>
+            <div class="footer_container">
+                <h3 class="footer_title">Sede da empresa</h3>
+                <p class="footer_text">Avenida São Sebastião</p>
+                <p class="footer_text">N° 763 - Vila Velha</p>
+                <p class="footer_text">Rio de Janeiro, RJ.</p>
+                <p class="footer_text">CEP: 60856-934</p>
+            </div>
+            <div class="footer_container">
+                <h3 class="footer_title">Contato</h3>
+                <p class="footer_text">(21) 99258-3481</p>
+                <p class="footer_text">support@netacademy.org</p>
+            </div>
+            <div class="footer_container">
+                <img src="../../assets/logos/Logo NetAcademy horizontal.png" alt="" class="footer_logo">
+                <p class="footer_text">2023-2024 — NetAcademy</p>
+                <p class="footer_text">SITE FICTÍCIO PARA FINS DE ESTUDO.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
