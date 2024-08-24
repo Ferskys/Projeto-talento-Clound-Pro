@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>NetAcademy | Bem-vindo!</title>
 </head>
@@ -12,13 +12,14 @@
         <div class="background">
             <nav class="navbar">
                 <div class="navbar_img">
-                    <img src="assets/NetAcademy-navbar.png" alt="company-logo" class="navbar_img_logo">
+                    <a href="index.html"><img src="assets/logos/netacademy-navbar.png" alt="company-logo" class="navbar_img_logo">
+                    </a>
                 </div>
                 <ul class="navbar_menu">
                     <li><a href="index.html" class="navbar_menu_item active">Início</a></li>
                     <li><a href="" class="navbar_menu_item">Aprendizado</a></li>
                     <li><a href="" class="navbar_menu_item">Nossa Missão</a></li>
-                    <li><a href="" class="navbar_menu_item">Contato</a></li>
+                    <li><a href="menus/contato/contato.html" class="navbar_menu_item">Contato</a></li>
                 </ul>
                 <!-- Usar botão para inscrição na newsletter -->
                 <button class="navbar_button">
@@ -26,22 +27,87 @@
                 </button>
             </nav>
             <section class="hero">
-                <div class="hero_left">
-                    <h1 class="hero_left_title">Conecte-se ao Futuro das Redes de Computação</h1>
-                    <p class="hero_left_description">Domine as Redes de Computação com nossos cursos especializados.
-                        E o melhor: de forma <span class="hero_left_description_gratuita">gratuita</span>!
-                    </p>                    
-                    <a href="" class="hero_left_link">Comece agora</a>                    
-                </div>
-                <div class="hero_right">
-                    <div class="hero_right_container">
-                        <img src="assets/img_networking.png" alt="people connected through technology" class="hero_right_img">
-                    </div>
-                </div>       
-
-            </section>
+                <h1 class="hero_title">Conecte-se ao Futuro das Redes de Computação</h1>
+                <p class="hero_description">Domine as Redes de Computação com nossos cursos especializados.<br> E o melhor: de forma <span class="hero_description_gratuita">gratuita</span>!
+                </p>                    
+                <a href="" class="hero_link">Comece agora seu aprendizado</a>       
+            </section>            
         </div>
     </main>
+    <section class="patreons">
+        <img src="assets/logos/logo-prozeducacao.png" alt="prozeducação logo" class="patreons_logo">
+        <img src="assets/logos/logo-cisco.png" alt="cisco logo" class="patreons_logo">
+        <img src="assets/logos/logo-comptia.png" alt="comptia logo" class="patreons_logo">
+        <img src="assets/logos/logo-oracle.png" alt="oracle logo" class="patreons_logo">
+        <img src="assets/logos/logo-paloalto.png" alt="paloalto logo" class="patreons_logo">
+        <img src="assets/logos/logo-redhat.svg" alt="logo redhat" class="patreons_logo">
+        <img src="assets/logos/logo-aws.svg" alt="aws logo" class="patreons_logo">                
+    </section>
+    <section class="services">
+        <div class="services_background">
+            <div class="services_main">
+                <img src="assets/bg/left image.png" alt="" class="services_left">
+                <div class="services_right">
+                    <div class="services_right_container">
+                        <div class="services_right_image">
+                            <img src="assets/icons-colored/icon-books.png" alt="book icon" class="services_right_icon">
+                        </div>
+                        <div class="services_right_text">
+                            <h2 class="services_right_title">Conteúdo de Qualidade</h2>
+                            <p class="services_right_description">Acesse uma vasta biblioteca de materiais didáticos de qualidade, totalmente gratuitos e certificados.</p>
+                        </div>
+                    </div>
+                    <div class="services_right_container" style="margin-top: 40px;">
+                        <div class="services_right_image">
+                            <img src="assets/icons-colored/icon-team.png" alt="book icon" class="services_right_icon">
+                        </div>
+                        <div class="services_right_text">
+                            <h2 class="services_right_title">Equipe engajada</h2>
+                            <p class="services_right_description">Nossa equipe é formada por especialistas renomados e apaixonados por tecnologia.</p>
+                        </div>
+                    </div>
+                    <div class="services_right_container" style="margin-top: 40px;">
+                        <div class="services_right_image">
+                            <img src="assets/icons-colored/logo-collaboration.png" alt="book icon" class="services_right_icon">
+                        </div>
+                        <div class="services_right_text">
+                            <h2 class="services_right_title">Junte-se à nossa comunidade</h2>
+                            <p class="services_right_description">Participe da nossa comunidade! Compartilhe suas ideias e ajude a moldar o tópicos e cursos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_background">
+            <div class="footer_container">
+                <h3 class="footer_title">Equipe</h3>
+                <a href="https://github.com/Ferskys" class="footer_text">Fernanda Suominsky</a>
+                <a href="https://github.com/HenriqueCanho" class="footer_text">Henrique Canho</a>
+                <a href="https://github.com/jullyanvpr" class="footer_text">Jullyan Gomes</a>
+                <a href="https://github.com/LeslyMontufar" class="footer_text">Lesly Montúfar</a>
+                <a href="" class="footer_text">Victor Oliveira</a>
+            </div>
+            <div class="footer_container">
+                <h3 class="footer_title">Sede da empresa</h3>
+                <p class="footer_text">Avenida São Sebastião</p>
+                <p class="footer_text">N° 763 - Vila Velha</p>
+                <p class="footer_text">Rio de Janeiro, RJ.</p>
+                <p class="footer_text">CEP: 60856-934</p>
+            </div>
+            <div class="footer_container">
+                <h3 class="footer_title">Contato</h3>
+                <p class="footer_text">(21) 99258-3481</p>
+                <p class="footer_text">support@netacademy.org</p>
+            </div>
+            <div class="footer_container">
+                <img src="assets/logos/Logo NetAcademy horizontal.png" alt="" class="footer_logo">
+                <p class="footer_text">2023-2024 — NetAcademy</p>
+                <p class="footer_text">SITE FICTÍCIO PARA FINS DE ESTUDO.</p>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

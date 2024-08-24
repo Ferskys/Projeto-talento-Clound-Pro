@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --blue: #ba3200;
+    --lightorange: #ffe1d6;
+    --lightblue: #e2f4ff;
+    --darkgrey: #252d44;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "karla";
+}
+
+.main {
+    height: 80svh;
+    width: calc(100vw-30px);
+    background-image: url(../../assets/bg/contato-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    width: 90rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    margin: 0 40px;  
+}
+
+.navbar {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin-top: 20px;
+}
+
+.navbar_img_logo {
+    max-width: 8rem;
+    /* Torna o arquivo PNG em branco */
+    filter: invert(100%) brightness(100%);
+}
+
+.navbar_menu {
+    display: flex;
+    gap: 70px;
+}
+
+.navbar_menu_item {
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+}
+
+.navbar_menu_item::after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--white);
+    transition: width 0.2s ease-in-out;
+}
+
+.navbar_menu_item:hover::after {
+    content: '';
+    width: 100%;
+    opacity: 1;
+}
+
+
+.navbar_button {
+    padding: 8px 12px;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato_text {
+    margin-top: 60px;
+}
+
+.contato_title{
+    color: var(--white);
+    font-weight: 800;
+    font-size: 4rem;
+    letter-spacing: -2px;
+}
+
+.contato_description {
+    color: var(--white);
+    width: 580px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;    
+}
+
+.form_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.form_input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 10px;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form_label {
+    color: var(--white);
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.messageLabel {
+    font-size: .8rem;
+    color: var(--darkgrey);
+}
+
+.messageBox {
+    margin-top: 10px;
+    padding: 10px;
+    height: 7.5rem;
+    border-radius: 5px;
+    border-width: .5px;
+    border-style: solid;
+    border-color: var(--blue);
+    outline: none;
+    resize: none;
+}
+
+.border_change:hover {
+    background-color: var(--lightorange);
+    border: solid .5px var(--blue);
+}
+
+.charCount {
+    align-self: flex-end;
+    margin-top: 10px;
+    font-size: .8rem;
+    color: var(--white);
+}
+
+.footer {
+    height: 18vh;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer_background {
+    width: 90rem;
+    display: flex;
+    justify-content: space-between;
+    margin:0px 40px;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footer_title {
+    font-size: 1rem;
+    color: var(--blue);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer_text {
+    margin-bottom: 2px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer_logo {
+    width: 10rem;
+    margin-bottom: 10px;
+}
+
+
+@media (max-height: 940px) {
+    .hero {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 1130px) {
+    /* .main {
+        height: 60svh;
+    } */
+
+    .navbar_menu {
+        gap: 40px
+    }
+
+    .contato_title{
+        font-size: 3rem;
+    }
+
+    .contato_description {
+        font-size: 1rem;
+    }
+}
